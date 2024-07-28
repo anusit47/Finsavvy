@@ -51,6 +51,13 @@ flutter:
           weight: 500
         - asset: assets/fonts/plus_jakarta/PlusJakartaDisplay-Bold.otf
           weight: 700
+    - family: Prompt
+      fonts:
+        - asset: assets/fonts/Prompt/Prompt-Regular.ttf
+        - asset: assets/fonts/Prompt/Prompt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Prompt/Prompt-Bold.ttf
+          weight: 700
     - family: Grandis Extended
       fonts:
         - asset: assets/fonts/grandis_extended/GrandisExtended-Regular.ttf
