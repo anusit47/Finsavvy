@@ -19,15 +19,16 @@ class FlashSale extends StatelessWidget {
         // While loading show 👇
         // const BannerMWithCounterSkelton(),
         BannerMWithCounter(
-          duration: const Duration(hours: 8),
-          text: "Super Flash Sale \n50% Off",
+          duration: const Duration(hours: 72),
+          text:
+              "ยินดีต้อนรับผู้ใช้งานใหม่ \nคุณได้รับ exp เพิ่มขึ้น 30% \nเป็นระยะเวลา 3 วัน",
           press: () {},
         ),
         const SizedBox(height: defaultPadding / 2),
         Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
-            "Flash sale",
+            "ภารกิจประจำวัน",
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
