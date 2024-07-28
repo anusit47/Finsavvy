@@ -25,7 +25,7 @@ class SignUpForm extends StatelessWidget {
             textInputAction: TextInputAction.next,
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
-              hintText: "Email address",
+              hintText: "ที่อยู่อีเมล",
               prefixIcon: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
@@ -53,7 +53,7 @@ class SignUpForm extends StatelessWidget {
             validator: passwordValidator.call,
             obscureText: true,
             decoration: InputDecoration(
-              hintText: "Password",
+              hintText: "รหัสผ่าน",
               prefixIcon: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),

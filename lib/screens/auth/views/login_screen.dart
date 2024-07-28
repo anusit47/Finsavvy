@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           children: [
             Image.asset(
-              "assets/images/login_dark.png",
+              "assets/images/login.png",
               fit: BoxFit.cover,
             ),
             Padding(
@@ -32,12 +32,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Welcome back!",
+                    "ยินดีต้อนรับสู่แอป Finsavvy!",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: defaultPadding / 2),
                   const Text(
-                    "Log in with your data that you intered during your registration.",
+                    "เริ่มต้นการเข้าสู่ระบบ",
                   ),
                   const SizedBox(height: defaultPadding),
                   LogInForm(formKey: _formKey),
@@ -68,12 +68,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text("Don't have an account?"),
+                      const Text("ยังไม่มีบัญชี?"),
                       TextButton(
                         onPressed: () {
                           Navigator.pushNamed(context, signUpScreenRoute);
                         },
-                        child: const Text("Sign up"),
+                        child: const Text("สมัครบัญชีเลย"),
                       )
                     ],
                   ),

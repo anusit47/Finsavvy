@@ -22,7 +22,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: Column(
           children: [
             Image.asset(
-              "assets/images/signUp_dark.png",
+              "assets/images/login.png",
               height: MediaQuery.of(context).size.height * 0.35,
               width: double.infinity,
               fit: BoxFit.cover,
@@ -33,12 +33,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Let’s get started!",
+                    "เริ่มสมัครกันเลย!",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: defaultPadding / 2),
                   const Text(
-                    "Please enter your valid data in order to create an account.",
+                    "ใส่ข้อมูลเพื่อสร้างบัญชี",
                   ),
                   const SizedBox(height: defaultPadding),
                   SignUpForm(formKey: _formKey),
@@ -52,7 +52,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       Expanded(
                         child: Text.rich(
                           TextSpan(
-                            text: "I agree with the",
+                            text: "ยอมรับ",
                             children: [
                               TextSpan(
                                 recognizer: TapGestureRecognizer()
@@ -60,14 +60,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     Navigator.pushNamed(
                                         context, termsOfServicesScreenRoute);
                                   },
-                                text: " Terms of service ",
+                                text: " เงื่อนไขการใช้งาน ",
                                 style: const TextStyle(
                                   color: primaryColor,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               const TextSpan(
-                                text: "& privacy policy.",
+                                text: "& นโยบายความเป็นส่วนตัว.",
                               ),
                             ],
                           ),
@@ -83,17 +83,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       // 🔗 https://theflutterway.gumroad.com/l/fluttershop
                       Navigator.pushNamed(context, entryPointScreenRoute);
                     },
-                    child: const Text("Continue"),
+                    child: const Text("สมัคร"),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text("Do you have an account?"),
+                      const Text("มีบัญชีอยู่แล้ว?"),
                       TextButton(
                         onPressed: () {
                           Navigator.pushNamed(context, logInScreenRoute);
                         },
-                        child: const Text("Log in"),
+                        child: const Text("ลงชื่อใช้งาน"),
                       )
                     ],
                   ),
