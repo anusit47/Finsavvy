@@ -6,7 +6,8 @@ import '../../../constants.dart';
 class BannerMStyle1 extends StatelessWidget {
   const BannerMStyle1({
     super.key,
-    this.image = "https://i.imgur.com/UP7xhPG.png",
+    this.image =
+        "https://siamblockchain.com/wp-content/uploads/2024/06/bitcoin-up-1.jpg",
     required this.text,
     required this.press,
   });
@@ -40,7 +41,7 @@ class BannerMStyle1 extends StatelessWidget {
               ),
               const Spacer(),
               const Text(
-                "Shop now",
+                "read more",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,

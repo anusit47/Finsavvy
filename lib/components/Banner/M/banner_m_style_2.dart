@@ -8,7 +8,8 @@ import '../../../constants.dart';
 class BannerMStyle2 extends StatelessWidget {
   const BannerMStyle2({
     super.key,
-    this.image = "https://i.imgur.com/J1Qjut7.png",
+    this.image =
+        "https://u3j7m9h7.rocketcdn.me/wp-content/uploads/2020/05/top-tech-stocks-to-watch.jpg",
     required this.title,
     required this.press,
     this.subtitle,

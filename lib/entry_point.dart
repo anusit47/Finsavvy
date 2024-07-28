@@ -46,10 +46,10 @@ class _EntryPointState extends State<EntryPoint> {
         leadingWidth: 0,
         centerTitle: false,
         title: SvgPicture.asset(
-          "assets/logo/Shoplon.svg",
+          "assets/logo/Finsavvy.svg",
           colorFilter: ColorFilter.mode(
               Theme.of(context).iconTheme.color!, BlendMode.srcIn),
-          height: 20,
+          height: 130,
           width: 100,
         ),
         actions: [
@@ -115,31 +115,30 @@ class _EntryPointState extends State<EntryPoint> {
           unselectedItemColor: Colors.transparent,
           items: [
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Shop.svg"),
-              activeIcon: svgIcon("assets/icons/Shop.svg", color: primaryColor),
-              label: "Shop",
+              icon: svgIcon("assets/icons/home.svg"),
+              activeIcon: svgIcon("assets/icons/home.svg", color: primaryColor),
+              label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Category.svg"),
+              icon: svgIcon("assets/icons/book.svg"),
+              activeIcon: svgIcon("assets/icons/book.svg", color: primaryColor),
+              label: "Lesson",
+            ),
+            BottomNavigationBarItem(
+              icon: svgIcon("assets/icons/calendar.svg"),
               activeIcon:
-                  svgIcon("assets/icons/Category.svg", color: primaryColor),
-              label: "Discover",
+                  svgIcon("assets/icons/calendar.svg", color: primaryColor),
+              label: "Plan",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Bookmark.svg"),
+              icon: svgIcon("assets/icons/chart.svg"),
               activeIcon:
-                  svgIcon("assets/icons/Bookmark.svg", color: primaryColor),
-              label: "Bookmark",
+                  svgIcon("assets/icons/chart.svg", color: primaryColor),
+              label: "Graph",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Bag.svg"),
-              activeIcon: svgIcon("assets/icons/Bag.svg", color: primaryColor),
-              label: "Cart",
-            ),
-            BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Profile.svg"),
-              activeIcon:
-                  svgIcon("assets/icons/Profile.svg", color: primaryColor),
+              icon: svgIcon("assets/icons/user.svg"),
+              activeIcon: svgIcon("assets/icons/user.svg", color: primaryColor),
               label: "Profile",
             ),
           ],
