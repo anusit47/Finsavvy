@@ -2,9 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:shop/components/Banner/M/banner_m_style_1.dart';
-import 'package:shop/components/Banner/M/banner_m_style_2.dart';
-import 'package:shop/components/Banner/M/banner_m_style_3.dart';
-import 'package:shop/components/Banner/M/banner_m_style_4.dart';
+import 'package:shop/components/Banner/M/banner_m_style_12.dart';
+import 'package:shop/components/Banner/M/banner_m_style_13.dart';
+import 'package:shop/components/Banner/M/banner_m_style_14.dart';
+// import 'package:shop/components/Banner/M/banner_m_style_2.dart';
+// import 'package:shop/components/Banner/M/banner_m_style_3.dart';
+// import 'package:shop/components/Banner/M/banner_m_style_4.dart';
 import 'package:shop/components/dot_indicators.dart';
 
 import '../../../../constants.dart';
@@ -26,25 +29,20 @@ class _OffersCarouselState extends State<OffersCarousel> {
   // Offers List
   List offers = [
     BannerMStyle1(
-      text: "New items with \nFree shipping",
+      text: "ข่าวคริปโต \nBitcoin ราคาพุ่งสูงถึง 70,000 USD",
       press: () {},
     ),
-    BannerMStyle2(
-      title: "Black \nfriday",
-      subtitle: "Collection",
-      discountParcent: 50,
+    BannerMStyle12(
+      text: "ซื้อหุ้นเทคโนโลยี \nตัวท็อปของตลาด",
       press: () {},
     ),
-    BannerMStyle3(
-      title: "Grab \nyours now",
-      discountParcent: 50,
+    BannerMStyle13(
+      text:
+          "นักลงทุนวิเคราะห์หุ้น NVIDIA \nลุ้นมาร์เก็ตแคปทะลุ 5 ล้านล้านดอลลาร์",
       press: () {},
     ),
-    BannerMStyle4(
-      // image: , user your image
-      title: "SUMMER \nSALE",
-      subtitle: "SPECIAL OFFER",
-      discountParcent: 80,
+    BannerMStyle14(
+      text: "SET ปิดลบ 15 จุด แรงขาย \n“บิ๊กแคป”-หุ้น EA ถ่วงตลาด",
       press: () {},
     ),
   ];

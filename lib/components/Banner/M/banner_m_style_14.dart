@@ -3,11 +3,11 @@ import 'banner_m.dart';
 
 import '../../../constants.dart';
 
-class BannerMStyle1 extends StatelessWidget {
-  const BannerMStyle1({
+class BannerMStyle14 extends StatelessWidget {
+  const BannerMStyle14({
     super.key,
     this.image =
-        "https://siamblockchain.com/wp-content/uploads/2024/06/bitcoin-up-1.jpg",
+        "https://www.kaohoon.com/wp-content/uploads/2021/03/SET_Down-2.jpg",
     required this.text,
     required this.press,
   });

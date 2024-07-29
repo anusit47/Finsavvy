@@ -10,7 +10,8 @@ import 'banner_m.dart';
 class BannerMWithCounter extends StatefulWidget {
   const BannerMWithCounter({
     super.key,
-    this.image = "https://i.imgur.com/pRgcbpS.png",
+    this.image =
+        "https://img.freepik.com/premium-photo/business-arrow-increase-success-graph-growth-stock-market-earnings-financial-profit-income-background-with-diagram-chart-investment_79161-1808.jpg",
     required this.text,
     required this.duration,
     required this.press,

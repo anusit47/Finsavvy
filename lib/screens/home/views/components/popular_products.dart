@@ -19,7 +19,7 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
-            "Popular products",
+            "เทรนด์การลงทุน",
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
