@@ -21,6 +21,7 @@ dependencies:
   animations: ^2.0.11
   url_launcher: ^6.3.0
   flutter_launcher_icons: ^0.13.1
+  intl: ^0.17.0
 
 flutter_icons:
   android: true
