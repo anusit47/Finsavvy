@@ -58,4 +58,8 @@ const String paymentMethodScreenRoute = "payment_method";
 const String addNewCardScreenRoute = "add_new_card";
 const String thanksForOrderScreenRoute = "thanks_order";
 
-// const String planScreenRoute = "plan";
+const String retirementPlanner = "retirement_planner";
+const String taxPlanner = "tax_planner";
+const String investmentPlanner = "investment_planner";
+const String homePurchasePlanner = "home_purchase_planner";
+const String financialHealthChecker = "financial_health_checker";

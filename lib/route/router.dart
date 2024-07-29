@@ -305,6 +305,32 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //   return MaterialPageRoute(
     //     builder: (context) => const ThanksForOrderScreen(),
     //   );
+
+    case retirementPlanner:
+      return MaterialPageRoute(
+        builder: (context) => const RetirementPlanner(),
+      );
+
+    case taxPlanner:
+      return MaterialPageRoute(
+        builder: (context) => const TaxPlanner(),
+      );
+    
+    case investmentPlanner:
+      return MaterialPageRoute(
+        builder: (context) => const InvestmentPlanner(),
+      );
+
+      case homePurchasePlanner:
+      return MaterialPageRoute(
+        builder: (context) => const HomePurchasePlanner(),
+      );
+
+      case financialHealthChecker:
+      return MaterialPageRoute(
+        builder: (context) => const FinancialHealthChecker(),
+      );
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine
