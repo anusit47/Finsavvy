@@ -37,6 +37,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/all-finsavvy-image/
     - assets/icons/
     - assets/Illustration/
     - assets/flags/
