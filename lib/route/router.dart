@@ -360,6 +360,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       builder: (context) => LevelScreen(),
     );
 
+    case quizScreen:
+    return MaterialPageRoute(
+      builder: (context) => QuizScreen(),
+    );
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine

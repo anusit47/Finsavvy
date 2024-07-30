@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:finsavvy/route/route_constants.dart';
 
 
-class FinanceScreen extends StatelessWidget {
+class FinanceScreen extends StatefulWidget {
   const FinanceScreen({super.key});
 
+  @override
+  _FinanceScreenState createState() => _FinanceScreenState();
+}
+
+class _FinanceScreenState extends State<FinanceScreen> {
+  final PageController _pageController = PageController();
   final List<FinanceCard> pages = const [
     FinanceCard(
       title: 'วิชาการเงินเป็นมากกว่าตัวเลขและสูตรคำนวณ ',
@@ -30,6 +37,21 @@ class FinanceScreen extends StatelessWidget {
       content: 'หมายถึงการเพิ่มพูนทรัพย์สินและสินทรัพย์ต่างๆ เพื่อให้มีฐานะทางการเงินที่ดีขึ้น การลงทุนเป็นวิธีการหนึ่งในการสะสมความมั่งคั่ง แต่การลงทุนต้องอาศัยความรู้และความเข้าใจอย่างถ่องแท้',
       imagePath: 'assets/images/all-finsavvy-image/salary.png',
     ),
+    FinanceCard(
+      title: 'การวางแผนการเงินเป็นขั้นตอนสำคัญในการบรรลุเป้าหมายทางการเงิน',
+      content: 'ไม่ว่าจะเป็นการซื้อบ้าน ซื้อรถ ส่งลูกเรียน หรือเกษียณอายุ การวางแผนการเงินจะช่วยให้เรามองเห็นภาพรวมของสถานการณ์ทางการเงินของเรา และสามารถวางแผนการใช้จ่ายและการออมได้อย่างมีประสิทธิภาพ การวางแผนการเงินไม่ใช่เรื่องยาก เพียงแค่เราเริ่มต้นตั้งเป้าหมายที่ชัดเจน และวางแผนการดำเนินงานให้สอดคล้องกับเป้าหมายนั้น',
+      imagePath: 'assets/images/all-finsavvy-image/salary.png',
+    ),
+    FinanceCard(
+      title: 'การเรียนรู้เรื่องการเงินไม่ใช่เรื่องยาก',
+      content: 'มีแหล่งข้อมูลมากมายที่สามารถนำมาศึกษาได้ เช่น หนังสือ บทความ เว็บไซต์ หรือคอร์สเรียนออนไลน์ การเริ่มต้นเรียนรู้เรื่องการเงินตั้งแต่เนิ่นๆ จะทำให้เรามีความพร้อมในการบริหารจัดการเงินของตัวเองได้อย่างมีประสิทธิภาพ และสามารถสร้างความมั่งคั่งให้กับตนเองและครอบครัวได้ในระยะยาว',
+      imagePath: 'assets/images/all-finsavvy-image/salary.png',
+    ),
+    FinanceCard(
+      title: 'สรุป',
+      content: 'การเรียนรู้เรื่องการเงินเป็นสิ่งจำเป็นสำหรับทุกคน เพราะมันจะช่วยให้เรามีชีวิตที่มีความสุขและมั่นคงทางการเงิน การจัดการสภาพคล่อง การจัดการความเสี่ยง และการสะสมความมั่งคั่ง เป็น 3 องค์ประกอบหลักของการจัดการเงินที่ดี การวางแผนการเงินจะช่วยให้เราบรรลุเป้าหมายทางการเงินได้อย่างมีประสิทธิภาพ ดังนั้นอย่ารอช้าที่จะเริ่มต้นเรียนรู้เรื่องการเงินตั้งแต่วันนี้',
+      imagePath: 'assets/images/all-finsavvy-image/salary.png',
+    ),
   ];
 
   @override
@@ -37,8 +59,17 @@ class FinanceScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('พื้นฐานการเงิน')),
       body: SafeArea(
-        child: PageView(
-          children: pages,
+        child: PageView.builder(
+          controller: _pageController,
+          itemCount: pages.length,
+          itemBuilder: (context, index) {
+            return pages[index];
+          },
+          onPageChanged: (index) {
+            if (index == pages.length - 1) {
+              Navigator.pushNamed(context, quizScreen);
+            }
+          },
         ),
       ),
     );
@@ -59,7 +90,7 @@ class FinanceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color.fromARGB(255, 0, 80, 146), // เปลี่ยนสีพื้นหลังของการ์ด
+      color: Color(0xFF8A19D6), // เปลี่ยนสีพื้นหลังของการ์ด
       margin: EdgeInsets.all(20),
       child: Padding(
         padding: EdgeInsets.all(20),
@@ -85,3 +116,5 @@ class FinanceCard extends StatelessWidget {
     );
   }
 }
+
+

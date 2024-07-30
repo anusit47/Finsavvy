@@ -53,7 +53,7 @@ class LevelButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: CircleBorder(),
         padding: EdgeInsets.all(24),
-        backgroundColor: level == 'START' ? Colors.blue : Colors.grey, // ใช้ backgroundColor แทน primary
+        backgroundColor: level == 'START' ? Color(0xFF8A19D6): Colors.grey, // ใช้ backgroundColor แทน primary
       ),
       child: Text(
         level,
