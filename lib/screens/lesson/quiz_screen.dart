@@ -223,6 +223,7 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
+
   Widget _buildResultView() {
     return SingleChildScrollView(
       child: Padding(
