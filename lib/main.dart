@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/route/route_constants.dart';
-import 'package:shop/route/router.dart' as router;
-import 'package:shop/theme/app_theme.dart';
+import 'package:finsavvy/route/route_constants.dart';
+import 'package:finsavvy/route/router.dart' as router;
+import 'package:finsavvy/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());

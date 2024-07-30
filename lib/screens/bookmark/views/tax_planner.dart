@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop/route/route_constants.dart';
-import 'package:shop/models/tax_result_arguments.dart';
+import 'package:finsavvy/route/route_constants.dart';
+import 'package:finsavvy/models/tax_result_arguments.dart';
 
 class TaxPlanner extends StatefulWidget {
   const TaxPlanner({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/ExpCard.dart';
-import 'package:shop/models/ExpModel.dart';
-import 'package:shop/route/route_constants.dart';
+import 'package:finsavvy/components/product/ExpCard.dart';
+import 'package:finsavvy/models/ExpModel.dart';
+import 'package:finsavvy/route/route_constants.dart';
 import '../../../../constants.dart';
 
 class PopularExp extends StatelessWidget {

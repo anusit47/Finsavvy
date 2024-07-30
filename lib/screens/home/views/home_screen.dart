@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/screens/home/views/components/popularInvest.dart';
+import 'package:finsavvy/constants.dart';
+import 'package:finsavvy/screens/home/views/components/popularInvest.dart';
 
-import 'components/flash_sale.dart';
+import 'components/Mission.dart';
 import 'components/offer_carousel_and_categories.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(child: PopularInvestments()),
             SliverPadding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding * 1.5),
-              sliver: SliverToBoxAdapter(child: FlashSale()),
+              sliver: SliverToBoxAdapter(child: Mission()),
             ),
           ],
         ),

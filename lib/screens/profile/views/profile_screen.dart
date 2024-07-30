@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/list_tile/divider_list_tile.dart';
-import 'package:shop/components/network_image_with_loader.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/home.dart';
-import 'package:shop/main.dart';
-import 'package:shop/route/screen_export.dart';
-import 'package:shop/screens/profile/views/components/CreditScreen';
+import 'package:finsavvy/constants.dart';
+import 'package:finsavvy/route/screen_export.dart';
+import 'package:finsavvy/screens/profile/views/components/CreditScreen.dart';
 
 import 'components/profile_card.dart';
 import 'components/profile_menu_item_list_tile.dart';

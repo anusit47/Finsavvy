@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/constants.dart';
+import 'package:finsavvy/constants.dart';
 
 class UserInfoScreen extends StatefulWidget {
   const UserInfoScreen({Key? key}) : super(key: key);

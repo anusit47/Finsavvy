@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:shop/Model/coinModel.dart';
-import 'package:shop/Components/item.dart';
-import 'package:shop/Components/item2.dart';
+import 'package:finsavvy/Model/coinModel.dart';
+import 'package:finsavvy/Components/item.dart';
+import 'package:finsavvy/Components/item2.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -49,18 +49,19 @@ class _HomeState extends State<Home> {
                 ),
                 child: Column(
                   children: [
-                    Text(
-                      'Cyptocurrency Graph',
+                    const Text(
+                      'กราฟคริปโต',
                       style: TextStyle(
-                        fontSize: 12,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
+                        color: const Color.fromARGB(255, 0, 0, 0),
                       ),
                     ),
                     SizedBox(height: myHeight * 0.02),
                     Container(
                       height: myHeight * 0.36,
                       child: isRefreshing
-                          ? Center(
+                          ? const Center(
                               child: CircularProgressIndicator(
                                 color: Color.fromARGB(255, 0, 157, 255),
                               ),
@@ -81,13 +82,14 @@ class _HomeState extends State<Home> {
                                 ),
                     ),
                     SizedBox(height: myHeight * 0.02),
-                    Row(
+                    const Row(
                       children: [
                         Text(
-                          'Recommend Cyptocurrency',
+                          'เทรนด์คริปโต',
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 16,
                             fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 0, 0, 0),
                           ),
                         ),
                       ],
@@ -95,7 +97,7 @@ class _HomeState extends State<Home> {
                     SizedBox(height: myHeight * 0.01),
                     Expanded(
                       child: isRefreshing
-                          ? Center(
+                          ? const Center(
                               child: CircularProgressIndicator(
                                 color: Color.fromARGB(255, 0, 157, 255),
                               ),
@@ -103,7 +105,7 @@ class _HomeState extends State<Home> {
                           : coinMarket == null || coinMarket!.isEmpty
                               ? Padding(
                                   padding: EdgeInsets.all(myHeight * 0.06),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       'Attention this Api is free, so you cannot send multiple requests per second, please wait and try again later.',
                                       style: TextStyle(fontSize: 18),

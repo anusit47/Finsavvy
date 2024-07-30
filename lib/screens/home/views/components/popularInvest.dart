@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/InvestmentCard.dart';
-import 'package:shop/models/InvestmentModel.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:finsavvy/components/product/InvestmentCard.dart';
+import 'package:finsavvy/models/InvestmentModel.dart';
+import 'package:finsavvy/route/screen_export.dart';
 import '../../../../constants.dart';
 
 class PopularInvestments extends StatelessWidget {

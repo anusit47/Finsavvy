@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/ExpCard.dart'; // Adjust the import path as needed
-import 'package:shop/models/ExpModel.dart'; // Adjust the import path as needed
-import 'package:shop/route/route_constants.dart';
-import 'package:shop/screens/discover/views/discover_screen.dart';
+import 'package:finsavvy/components/product/ExpCard.dart'; // Adjust the import path as needed
+import 'package:finsavvy/models/ExpModel.dart'; // Adjust the import path as needed
+import 'package:finsavvy/route/route_constants.dart';
+import 'package:finsavvy/screens/discover/views/discover_screen.dart';
 import '/components/Banner/M/banner_m_with_counter.dart';
 import '../../../../constants.dart';
 
-class FlashSale extends StatelessWidget {
-  const FlashSale({
+class Mission extends StatelessWidget {
+  const Mission({
     super.key,
   });
 

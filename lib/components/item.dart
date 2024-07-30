@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Item extends StatelessWidget {
   final dynamic item;
 
-  Item({required this.item});
+  const Item({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class Item extends StatelessWidget {
           Text(
             item.id,
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 10,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -60,7 +60,7 @@ class Item extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.normal,
-              color: Colors.grey,
+              color: const Color.fromARGB(255, 0, 0, 0),
             ),
           ),
         ],
@@ -102,8 +102,9 @@ class Item extends StatelessWidget {
           Text(
             '\$' + item.currentPrice.toString(),
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 13,
               fontWeight: FontWeight.bold,
+              color: const Color.fromARGB(255, 0, 0, 0),
             ),
           ),
           Row(
@@ -116,11 +117,11 @@ class Item extends StatelessWidget {
                   color: const Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
-              SizedBox(width: myWidth * 0.03),
+              SizedBox(width: myWidth * 0.01),
               Text(
                 item.marketCapChangePercentage24H.toStringAsFixed(2) + '%',
                 style: TextStyle(
-                  fontSize: 5,
+                  fontSize: 7,
                   fontWeight: FontWeight.normal,
                   color: item.marketCapChangePercentage24H >= 0
                       ? Colors.green

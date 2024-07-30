@@ -1,4 +1,4 @@
-import 'package:shop/Screens/selectCoin.dart';
+import 'package:finsavvy/selectCoin.dart';
 import 'package:flutter/material.dart';
 
 class Item2 extends StatelessWidget {
@@ -55,7 +55,7 @@ class Item2 extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.normal,
-                        color: Colors.grey),
+                        color: const Color.fromARGB(255, 0, 0, 0)),
                   ),
                   SizedBox(
                     width: myWidth * 0.03,
