@@ -17,9 +17,10 @@ class ProfileScreen extends StatelessWidget {
       body: ListView(
         children: [
           ProfileCard(
-            name: "Sepide",
-            email: "theflutterway@gmail.com",
-            imageSrc: "https://i.imgur.com/IXnwbLk.png",
+            name: "Anusit",
+            email: "threeninja.work@gmail.com",
+            imageSrc:
+                "https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-1/247401069_2674942402801428_1510295725705619951_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=SmDHOPxJIPAQ7kNvgGgQTDC&_nc_ht=scontent.fnak4-1.fna&oh=00_AYD_nkjF-n2BgCnYi9HMpmPO5j2gHX8Zso1s7q2KrrjcIw&oe=66AE67EE",
             // proLableText: "Sliver",
             // isPro: true, if the user is pro
             press: () {

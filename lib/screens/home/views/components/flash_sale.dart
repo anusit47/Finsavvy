@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop/components/product/ExpCard.dart'; // Adjust the import path as needed
 import 'package:shop/models/ExpModel.dart'; // Adjust the import path as needed
 import 'package:shop/route/route_constants.dart';
+import 'package:shop/screens/discover/views/discover_screen.dart';
 import '/components/Banner/M/banner_m_with_counter.dart';
 import '../../../../constants.dart';
 
@@ -51,8 +52,11 @@ class FlashSale extends StatelessWidget {
                 expAmount: demoExpModels[index].expAmount,
                 description: demoExpModels[index].description,
                 press: () {
-                  Navigator.pushNamed(context, productDetailsScreenRoute,
-                      arguments: index.isEven);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DiscoverScreen()),
+                  );
                 },
               ),
             ),
