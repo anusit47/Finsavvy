@@ -14,8 +14,8 @@ class Item2 extends StatelessWidget {
           horizontal: myWidth * 0.03, vertical: myHeight * 0.02),
       child: GestureDetector(
         onTap: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (contest) => SelectCoin(selectItem: item,)));
+          // Navigator.push(
+          //     context, MaterialPageRoute(builder: (contest) => SelectCoin(selectItem: item,)));
         },
         child: Container(
           padding: EdgeInsets.only(

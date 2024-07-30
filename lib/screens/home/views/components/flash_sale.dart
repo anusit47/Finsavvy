@@ -28,7 +28,7 @@ class FlashSale extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
-            "ภารกิจประจำวัน",
+            "ภารกิจ",
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
