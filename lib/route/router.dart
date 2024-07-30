@@ -355,6 +355,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       builder: (context) => LessonScreen(),
     );
 
+    case levelScreen:
+    return MaterialPageRoute(
+      builder: (context) => LevelScreen(),
+    );
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine

@@ -14,7 +14,7 @@ class LessonScreen extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, financeScreen);
+                Navigator.pushNamed(context, levelScreen);
               },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
