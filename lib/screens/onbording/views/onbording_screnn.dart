@@ -18,38 +18,39 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
   int _pageIndex = 0;
   final List<Onbord> _onbordData = [
     Onbord(
-      image: "assets/Illustration/Illustration-0.png",
-      imageDarkTheme: "assets/Illustration/Illustration_darkTheme_0.png",
-      title: "ยินดีต้อนรับเข้าสู่แอป \nFinsavvy!",
+      image: "assets/Illustration/on0.png",
+      // imageDarkTheme: "assets/Illustration/Illustration_darkTheme_0.png",
+      title: "ยินดีต้อนรับเข้าสู่\nFinsavvy!",
       description:
-          "เครื่องมือที่ช่วยเพิ่มพูนความรู้และทักษะในการบริหารจัดการ \nการเงิน การลงทุน การออมเงินสำหรับนิสิตจบใหม่และบุคคลทั่วไป",
+          "พวกเราจะช่วยส่งเสริมทักษะและการเรียนรู้ด้านการเงินของคุณ \nคุณพร้อมจะก้าวสู่อนาคตทางการเงินที่มั่นคงแล้วหรือยัง? \nเตรียมตัวให้เพร้อม แล้วมาร่วมเดินทางไปด้วยกัน!",
     ),
     Onbord(
-      image: "assets/Illustration/Illustration-1.png",
-      imageDarkTheme: "assets/Illustration/Illustration_darkTheme_1.png",
-      title: "วัตถุประสงค์และเป้าหมาย",
+      image: "assets/Illustration/on1.png",
+      // imageDarkTheme: "assets/Illustration/Illustration_darkTheme_1.png",
+      title: "วัตถุประสงค์",
       description:
-          "เพื่อส่งเสริมความรู้ด้านการเงิน การลงทุน และการบริหารจัดการเงินในอนาคตของนิสิตจบใหม่และบุคคลทั่วไป",
+          "เสริมทักษะการเงิน การลงทุน และการออม\nFinSavvy มุ่งเน้นพัฒนาทักษะด้านการเงินอย่างครบถ้วน\nเรามีบทเรียนทันสมัยและแผนการลงทุน\nที่ออกแบบมาเพื่อคุณโดยเฉพาะ",
     ),
     Onbord(
-      image: "assets/Illustration/Illustration-2.png",
-      imageDarkTheme: "assets/Illustration/Illustration_darkTheme_2.png",
-      title: "ปัญหาและอุปสรรคในการพัฒนา",
-      description: "ความเข้ากันได้กับอุปกรณ์และระบบปฏิบัติการต่างๆ",
+      image: "assets/Illustration/on2.png",
+      // imageDarkTheme: "assets/Illustration/Illustration_darkTheme_2.png",
+      title: "เป้าหมาย",
+      description:
+          "สร้างนิสัยการเงินที่ดีผ่านแอปพลิเคชันที่ใช้ง่ายและเข้าใจได้ทันที \nFinSavvy จะเป็นเพื่อนคู่คิดด้านการเงินของคุณ คุณจะสามารถติดตามและปรับปรุงการเงินของคุณได้อย่างมีประสิทธิภาพ",
     ),
     Onbord(
-      image: "assets/Illustration/Illustration-3.png",
-      imageDarkTheme: "assets/Illustration/Illustration_darkTheme_3.png",
-      title: "ข้อสรุปและข้อเสนอแนะ",
+      image: "assets/Illustration/on3.png",
+      // imageDarkTheme: "assets/Illustration/Illustration_darkTheme_3.png",
+      title: "ประโยชน์ที่คาดว่าจะได้รับ",
       description:
-          "การปลูกฝังความรู้และทักษะที่จำเป็นในการจัดการเงินจะเป็นประโยชน์ต่อทุกคนในทุกช่วงวัยทำให้พวกเขาสามารถจัดการการเงินได้อย่างมีประสิทธิภาพและเตรียมพร้อมสำหรับอนาคตได้ดีขึ้น",
+          "เรียนรู้และวางแผนการเงินอย่างมืออาชีพเปลี่ยนความรู้สู่การปฏิบัติจริง FinSavvy จะช่วยให้คุณมีความรู้พื้นฐานด้านการเงินที่มั่นคงนอกจากนี้ยังช่วยเพิ่มความพึงพอใจในการใช้ชีวิตที่มีการจัดการการเงินที่ดี",
     ),
     Onbord(
-      image: "assets/Illustration/Illustration-4.png",
-      imageDarkTheme: "assets/Illustration/Illustration_darkTheme_4.png",
-      title: "ข้อตกลงในการใช้ซอฟต์แวร์",
+      image: "assets/Illustration/on4.png",
+      // imageDarkTheme: "assets/Illustration/Illustration_darkTheme_4.png",
+      title: "เริ่มต้นใช้งาน",
       description:
-          "เพื่อส่งเสริมให้นักเรียนและนักศึกษาได้เรียนรู้และฝึกทักษะในการ พัฒนาซอฟต์แวร์",
+          "พร้อมแล้ว! มาเริ่มต้นการเรียนรู้กับ FinSavvy กันเลย \nเรียนรู้บทเรียนใหม่ ๆ และวางแผนการลงทุนที่เหมาะสมกับคุณ\nแล้วคุณจะพบว่าการบริหารเงินไม่ใช่เรื่องยากอีกต่อไป",
     ),
   ];
 
