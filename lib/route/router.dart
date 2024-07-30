@@ -350,6 +350,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       builder: (context) => FinanceScreen(),
     );
 
+    case lessonScreen:
+    return MaterialPageRoute(
+      builder: (context) => LessonScreen(),
+    );
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine
