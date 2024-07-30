@@ -3,7 +3,10 @@ import 'package:flutter_svg/svg.dart';
 import 'package:shop/components/list_tile/divider_list_tile.dart';
 import 'package:shop/components/network_image_with_loader.dart';
 import 'package:shop/constants.dart';
+import 'package:shop/home.dart';
+import 'package:shop/main.dart';
 import 'package:shop/route/screen_export.dart';
+import 'package:shop/screens/profile/views/components/CreditScreen';
 
 import 'components/profile_card.dart';
 import 'components/profile_menu_item_list_tile.dart';
@@ -50,7 +53,12 @@ class ProfileScreen extends StatelessWidget {
           ProfileMenuListTile(
             text: "Credits and Copyrights",
             svgSrc: "assets/icons/copyright.svg",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CreditScreen()),
+              );
+            },
           ),
           ProfileMenuListTile(
             text: "ให้ข้อเสนอแนะ feedback",

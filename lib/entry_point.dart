@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop/constants.dart';
+import 'package:shop/home.dart';
 import 'package:shop/route/screen_export.dart';
 
 class EntryPoint extends StatefulWidget {
@@ -18,7 +19,7 @@ class _EntryPointState extends State<EntryPoint> {
     DiscoverScreen(),
     BookmarkScreen(),
     // EmptyCartScreen(), // if Cart is empty
-    CartScreen(),
+    Home(),
     ProfileScreen(),
   ];
   int _currentIndex = 0;
