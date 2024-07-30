@@ -1,14 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shop/components/Banner/M/banner_m_style_1.dart';
-import 'package:shop/components/Banner/M/banner_m_style_12.dart';
-import 'package:shop/components/Banner/M/banner_m_style_13.dart';
-import 'package:shop/components/Banner/M/banner_m_style_14.dart';
+import 'package:finsavvy/components/Banner/M/banner_m_style_1.dart';
+import 'package:finsavvy/components/Banner/M/banner_m_style_12.dart';
+import 'package:finsavvy/components/Banner/M/banner_m_style_13.dart';
+import 'package:finsavvy/components/Banner/M/banner_m_style_14.dart';
 // import 'package:shop/components/Banner/M/banner_m_style_2.dart';
 // import 'package:shop/components/Banner/M/banner_m_style_3.dart';
 // import 'package:shop/components/Banner/M/banner_m_style_4.dart';
-import 'package:shop/components/dot_indicators.dart';
+import 'package:finsavvy/components/dot_indicators.dart';
 
 import '../../../../constants.dart';
 

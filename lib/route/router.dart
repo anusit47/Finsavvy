@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/entry_point.dart';
-import 'package:shop/models/retirement_result_arguments.dart';
-import 'package:shop/models/tax_result_arguments.dart';
+import 'package:finsavvy/entry_point.dart';
+import 'package:finsavvy/models/retirement_result_arguments.dart';
+import 'package:finsavvy/models/tax_result_arguments.dart';
 
 import 'screen_export.dart';
 

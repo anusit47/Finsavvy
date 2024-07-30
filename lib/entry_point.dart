@@ -2,9 +2,9 @@ import 'package:animations/animations.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/home.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:finsavvy/constants.dart';
+import 'package:finsavvy/cryptograph.dart';
+import 'package:finsavvy/route/screen_export.dart';
 
 class EntryPoint extends StatefulWidget {
   const EntryPoint({super.key});
@@ -23,9 +23,9 @@ class _EntryPointState extends State<EntryPoint> {
     ProfileScreen(),
   ];
   int _currentIndex = 0;
-  final double _expProgress = 0.7; // Example experience progress value (70%)
-  final int _currentExp = 70; // Example current experience value
-  final int _maxExp = 100; // Example maximum experience value
+  final double _expProgress = 0.6; // Example experience progress value (70%)
+  final int _currentExp = 120; // Example current experience value
+  final int _maxExp = 200; // Example maximum experience value
   final int _level = 2; // Example level
 
   @override
@@ -73,7 +73,7 @@ class _EntryPointState extends State<EntryPoint> {
               ),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, searchScreenRoute);
+                  Navigator.pushNamed(context, userInfoScreenRoute);
                 },
                 child: Container(
                   width: double.infinity,

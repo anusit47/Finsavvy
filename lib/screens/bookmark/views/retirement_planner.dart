@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/route/route_constants.dart';
+import 'package:finsavvy/route/route_constants.dart';
 import 'dart:math';
-import 'package:shop/models/retirement_result_arguments.dart';
+import 'package:finsavvy/models/retirement_result_arguments.dart';
 
 class RetirementPlanner extends StatefulWidget {
   const RetirementPlanner({super.key});

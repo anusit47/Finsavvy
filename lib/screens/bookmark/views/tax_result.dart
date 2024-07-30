@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/models/tax_result_arguments.dart';
+import 'package:finsavvy/models/tax_result_arguments.dart';
 import 'package:intl/intl.dart';
 
 class TaxResult extends StatelessWidget {

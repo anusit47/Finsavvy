@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/models/retirement_result_arguments.dart';
+import 'package:finsavvy/models/retirement_result_arguments.dart';
 import 'package:intl/intl.dart';
 
 class RetirementResult extends StatelessWidget {
