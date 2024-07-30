@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/entry_point.dart';
+import 'package:shop/models/retirement_result_arguments.dart';
 
 import 'screen_export.dart';
 
@@ -192,11 +193,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => const ProfileScreen(),
       );
 
-      // case planScreenRoute:
-      // return MaterialPageRoute(
-      //   builder: (context) => const PlanScreen(),
-      // );
-      
+    // case planScreenRoute:
+    // return MaterialPageRoute(
+    //   builder: (context) => const PlanScreen(),
+    // );
+
     // case getHelpScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const GetHelpScreen(),
@@ -315,20 +316,26 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const TaxPlanner(),
       );
-    
+
     case investmentPlanner:
       return MaterialPageRoute(
         builder: (context) => const InvestmentPlanner(),
       );
 
-      case homePurchasePlanner:
+    case homePurchasePlanner:
       return MaterialPageRoute(
         builder: (context) => const HomePurchasePlanner(),
       );
 
-      case financialHealthChecker:
+    case financialHealthChecker:
       return MaterialPageRoute(
         builder: (context) => const FinancialHealthChecker(),
+      );
+
+    case retirementResult:
+      final args = settings.arguments as RetirementResultArguments?;
+      return MaterialPageRoute(
+        builder: (context) => RetirementResult(arguments: args),
       );
 
     default:
