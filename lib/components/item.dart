@@ -111,7 +111,7 @@ class Item extends StatelessWidget {
               Text(
                 _formattedPriceChange(),
                 style: TextStyle(
-                  fontSize: 8,
+                  fontSize: 7,
                   fontWeight: FontWeight.normal,
                   color: const Color.fromARGB(255, 0, 0, 0),
                 ),

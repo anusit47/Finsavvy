@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                       child: isRefreshing
                           ? Center(
                               child: CircularProgressIndicator(
-                                color: Color(0xffFBC700),
+                                color: Color.fromARGB(255, 0, 157, 255),
                               ),
                             )
                           : coinMarket == null || coinMarket!.isEmpty
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
                       child: isRefreshing
                           ? Center(
                               child: CircularProgressIndicator(
-                                color: Color(0xffFBC700),
+                                color: Color.fromARGB(255, 0, 157, 255),
                               ),
                             )
                           : coinMarket == null || coinMarket!.isEmpty
