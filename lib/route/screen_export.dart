@@ -36,5 +36,6 @@ export '/screens/bookmark/views/home_purchase_planner.dart';
 export '/screens/bookmark/views/retire_result.dart';
 
 export '/screens/lesson/finance_screen.dart';
+export '/screens/lesson/lesson_screen.dart';
 
 
