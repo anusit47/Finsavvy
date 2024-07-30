@@ -85,7 +85,7 @@ class _HomeState extends State<Home> {
                     const Row(
                       children: [
                         Text(
-                          'เทรนด์คริปโต',
+                          'การเปลี่ยนแปลงราคาเหรียญใน 24 ชม.',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
