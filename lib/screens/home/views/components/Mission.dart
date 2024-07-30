@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:finsavvy/components/product/ExpCard.dart'; // Adjust the import path as needed
 import 'package:finsavvy/models/ExpModel.dart'; // Adjust the import path as needed
 import 'package:finsavvy/route/route_constants.dart';
-import 'package:finsavvy/screens/discover/views/discover_screen.dart';
 import '/components/Banner/M/banner_m_with_counter.dart';
 import '../../../../constants.dart';
 

@@ -129,14 +129,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     // case setupFaceIdScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const SetupFaceIdScreen(),
-    //   );
-    case productDetailsScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) {
-          bool isProductAvailable = settings.arguments as bool? ?? true;
-          return ProductDetailsScreen(isProductAvailable: isProductAvailable);
-        },
-      );
+
     case productReviewsScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const ProductReviewsScreen(),
@@ -149,38 +142,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const HomeScreen(),
       );
-    // case brandScreenRoute:
-    //   return MaterialPageRoute(
-    //     builder: (context) => const BrandScreen(),
-    //   );
-    // case discoverWithImageScreenRoute:
-    //   return MaterialPageRoute(
-    //     builder: (context) => const DiscoverWithImageScreen(),
-    //   );
-    // case subDiscoverScreenRoute:
-    //   return MaterialPageRoute(
-    //     builder: (context) => const SubDiscoverScreen(),
-    //   );
-    case discoverScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const DiscoverScreen(),
-      );
-    case onSaleScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const OnSaleScreen(),
-      );
-    case kidsScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const KidsScreen(),
-      );
-    case searchScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const SearchScreen(),
-      );
-    // case searchHistoryScreenRoute:
-    //   return MaterialPageRoute(
-    //     builder: (context) => const SearchHistoryScreen(),
-    //   );
+
     case bookmarkScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const BookmarkScreen(),
@@ -223,18 +185,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const NotificationsScreen(),
       );
-    case noNotificationScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const NoNotificationScreen(),
-      );
-    case enableNotificationScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const EnableNotificationScreen(),
-      );
-    case notificationOptionsScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const NotificationOptionsScreen(),
-      );
+
+
+
     // case selectLanguageScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const SelectLanguageScreen(),
@@ -243,18 +196,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //   return MaterialPageRoute(
     //     builder: (context) => const NoAddressScreen(),
     //   );
-    case addressesScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const AddressesScreen(),
-      );
+
     // case addNewAddressesScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const AddNewAddressScreen(),
     //   );
-    case ordersScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const OrdersScreen(),
-      );
+
     // case orderProcessingScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const OrderProcessingScreen(),
@@ -275,26 +222,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //   return MaterialPageRoute(
     //     builder: (context) => const CancledOrdersScreen(),
     //   );
-    case preferencesScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const PreferencesScreen(),
-      );
+
     // case emptyPaymentScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const EmptyPaymentScreen(),
     //   );
-    case emptyWalletScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const EmptyWalletScreen(),
-      );
-    case walletScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const WalletScreen(),
-      );
-    case cartScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) => const CartScreen(),
-      );
+
     // case paymentMethodScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const PaymentMethodScreen(),
