@@ -39,11 +39,12 @@ class PopularInvestments extends StatelessWidget {
                 name: demoPopularInvestments[index].name,
                 type: demoPopularInvestments[index].type,
                 currentPrice: demoPopularInvestments[index].currentPrice,
-                priceAfterDiscount: demoPopularInvestments[index].priceAfterDiscount,
+                priceAfterDiscount:
+                    demoPopularInvestments[index].priceAfterDiscount,
                 percentChange: demoPopularInvestments[index].percentChange,
                 press: () {
-                  Navigator.pushNamed(context, productDetailsScreenRoute,
-                      arguments: index.isEven);
+                  // Navigator.pushNamed(context, productDetailsScreenRoute,
+                  //     arguments: index.isEven);
                 },
               ),
             ),

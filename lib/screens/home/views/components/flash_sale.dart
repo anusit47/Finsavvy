@@ -52,11 +52,11 @@ class FlashSale extends StatelessWidget {
                 expAmount: demoExpModels[index].expAmount,
                 description: demoExpModels[index].description,
                 press: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const DiscoverScreen()),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //       builder: (context) => const DiscoverScreen()),
+                  // );
                 },
               ),
             ),
