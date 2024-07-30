@@ -52,7 +52,6 @@ class InvestmentPlanner extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Action to be performed on button press
                 },
                 child: const Text('คำนวณ'),
               ),
@@ -86,7 +85,6 @@ class InvestmentPlanner extends StatelessWidget {
         currentIndex: 2,
         selectedItemColor: Colors.blue,
         onTap: (index) {
-          // Handle bottom navigation tap
         },
       ),
     );

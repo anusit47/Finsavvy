@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:finsavvy/route/route_constants.dart';
 
 
-class LevelScreen extends StatelessWidget {
-  const LevelScreen({super.key});
+class LevelScreen2 extends StatelessWidget {
+  const LevelScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,23 +21,23 @@ class LevelScreen extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              'assets/images/all-finsavvy-image/acadawda.png',
+              'assets/images/all-finsavvy-image/acadawda.png', 
               height: 70,
             ),
             SizedBox(height: 20),
             CustomPaint(
-              painter: PathPainter(),
+              painter: PathPainter2(),
               child: Container(
                 width: 300,
                 height: 600,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    LevelButton(level: '5', onPressed: () {}),
-                    LevelButton(level: '4', onPressed: () {}),
-                    LevelButton(level: '3', onPressed: () {}),
-                    LevelButton(level: '2', onPressed: () {}),
-                    LevelButton(level: 'START', onPressed: () {
+                    LevelButton2(level: '5', onPressed: () {}),
+                    LevelButton2(level: '4', onPressed: () {}),
+                    LevelButton2(level: '3', onPressed: () {}),
+                    LevelButton2(level: '2', onPressed: () {}),
+                    LevelButton2(level: 'START', onPressed: () {
                       Navigator.pushNamed(context, financeScreen);
                     }),
                   ],
@@ -51,11 +51,12 @@ class LevelScreen extends StatelessWidget {
   }
 }
 
-class LevelButton extends StatelessWidget {
+
+class LevelButton2 extends StatelessWidget {
   final String level;
   final VoidCallback onPressed;
 
-  const LevelButton({required this.level, required this.onPressed, Key? key}) : super(key: key);
+  const LevelButton2({required this.level, required this.onPressed, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +65,7 @@ class LevelButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: CircleBorder(),
         padding: EdgeInsets.all(24),
-        backgroundColor: level == 'START' ? Color(0xFF8A19D6): Colors.grey, 
+        backgroundColor: level == 'START' || level == '2' ? Color(0xFF8A19D6) : Colors.grey,  
       ),
       child: Text(
         level,
@@ -74,7 +75,7 @@ class LevelButton extends StatelessWidget {
   }
 }
 
-class PathPainter extends CustomPainter {
+class PathPainter2 extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()

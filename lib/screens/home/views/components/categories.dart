@@ -4,7 +4,6 @@ import 'package:finsavvy/route/screen_export.dart';
 
 import '../../../../constants.dart';
 
-// For preview
 class CategoryModel {
   final String name;
   final String? svgSrc, route;
@@ -27,7 +26,7 @@ List<CategoryModel> demoCategories = [
   CategoryModel(
       name: "Kids", svgSrc: "assets/icons/Child.svg", route: kidsScreenRoute),
 ];
-// End For Preview
+
 
 class Categories extends StatelessWidget {
   const Categories({

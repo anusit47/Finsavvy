@@ -12,8 +12,7 @@ class OffersCarouselAndCategories extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // While loading use 👇
-        // const OffersSkelton(),
+
         OffersCarousel(),
       ],
     );

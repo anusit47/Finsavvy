@@ -20,55 +20,55 @@ class LessonScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Image.asset(
                   "assets/images/all-finsavvy-image/basic.png",
-                  height: 150, // ตั้งค่าความสูงของภาพ
+                  height: 150, 
                 ),
               ),
             ),
             GestureDetector(
               // onTap: () {
-              //   Navigator.pushNamed(context, taxPlanner);
+              //   Navigator.pushNamed(context, );
               // },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Image.asset(
                   "assets/images/all-finsavvy-image/manage.png",
-                  height: 150, // ตั้งค่าความสูงของภาพ
+                  height: 150, 
                 ),
               ),
             ),
             GestureDetector(
               // onTap: () {
-              //   Navigator.pushNamed(context, financialHealthChecker);
+              //   Navigator.pushNamed(context, );
               // },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Image.asset(
                   "assets/images/all-finsavvy-image/saving.png",
-                  height: 150, // ตั้งค่าความสูงของภาพ
+                  height: 150,
                 ),
               ),
             ),
             GestureDetector(
               // onTap: () {
-              //   Navigator.pushNamed(context, investmentPlanner);
+              //   Navigator.pushNamed(context, );
               // },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Image.asset(
                   "assets/images/all-finsavvy-image/longtoon.png",
-                  height: 150, // ตั้งค่าความสูงของภาพ
+                  height: 150, 
                 ),
               ),
             ),
             GestureDetector(
               // onTap: () {
-              //   Navigator.pushNamed(context, homePurchasePlanner);
+              //   Navigator.pushNamed(context, );
               // },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Image.asset(
                   "assets/images/all-finsavvy-image/taxxxxx.png",
-                  height: 150, // ตั้งค่าความสูงของภาพ
+                  height: 150, 
                 ),
               ),
             ),

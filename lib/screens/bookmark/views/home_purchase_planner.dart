@@ -51,7 +51,6 @@ class HomePurchasePlanner extends StatelessWidget {
             const SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {
-                // Action to be performed on button press
               },
               child: const Text('คำนวณ'),
             ),
@@ -84,7 +83,6 @@ class HomePurchasePlanner extends StatelessWidget {
         currentIndex: 2,
         selectedItemColor: Colors.blue,
         onTap: (index) {
-          // Handle bottom navigation tap
         },
       ),
     );

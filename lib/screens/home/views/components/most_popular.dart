@@ -23,13 +23,12 @@ class MostPopular extends StatelessWidget {
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        // While loading use 👇
-        // SeconderyProductsSkelton(),
+
         SizedBox(
           height: 114,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            // Find demoPopularProducts on models/ProductModel.dart
+
             itemCount: demoPopularProducts.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(

@@ -68,6 +68,7 @@ const String taxResult = "tax_result";
 const String financeScreen = "finance_screen";
 const String lessonScreen = "lesson_screen";
 const String levelScreen = "level_screen";
+const String levelScreen2 = "level_screen2";
 const String quizScreen = "quiz_screen";
 
 

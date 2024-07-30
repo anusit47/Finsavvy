@@ -59,9 +59,9 @@ class RetirementResult extends StatelessWidget {
                     ),
                   ),
                   Image.asset(
-                    'assets/images/all-finsavvy-image/money-bag 1.png', // Path to your image
-                    width: 80, // Width of the image
-                    height: 80, // Height of the image
+                    'assets/images/all-finsavvy-image/money-bag 1.png', 
+                    width: 80, 
+                    height: 80, 
                   ),
                 ],
               ),
@@ -142,11 +142,11 @@ class RetirementResult extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(), // This will push the image to the right
+          Spacer(),  
           Image.asset(
-            iconPath, // Path to your image
-            width: 80, // Width of the image
-            height: 80, // Height of the image
+            iconPath, 
+            width: 80, 
+            height: 80, 
           ),
         ],
       ),

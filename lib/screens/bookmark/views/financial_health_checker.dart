@@ -72,7 +72,6 @@ class FinancialHealthChecker extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Action to be performed on button press
                 },
                 child: const Text('ถัดไป'),
               ),
@@ -106,7 +105,6 @@ class FinancialHealthChecker extends StatelessWidget {
         currentIndex: 2,
         selectedItemColor: Colors.blue,
         onTap: (index) {
-          // Handle bottom navigation tap
         },
       ),
     );

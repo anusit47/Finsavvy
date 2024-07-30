@@ -59,9 +59,9 @@ class TaxResult extends StatelessWidget {
                     ),
                   ),
                   Image.asset(
-                    'assets/images/all-finsavvy-image/money-bag 1 (4).png', // Path to your image
-                    width: 80, // Width of the image
-                    height: 80, // Height of the image
+                    'assets/images/all-finsavvy-image/money-bag 1 (4).png',  
+                    width: 80, 
+                    height: 80, 
                   ),
                 ],
               ),

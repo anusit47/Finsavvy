@@ -16,8 +16,7 @@ class Mission extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // While loading show 👇
-        // const BannerMWithCounterSkelton(),
+
         BannerMWithCounter(
           duration: const Duration(hours: 72),
           text:
@@ -32,13 +31,12 @@ class Mission extends StatelessWidget {
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        // While loading show 👇
-        // const ProductsSkelton(),
+
         SizedBox(
           height: 220,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            // Replace demoFlashSaleProducts with demoExpModels or another specific list
+
             itemCount: demoExpModels.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(

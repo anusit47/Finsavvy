@@ -38,6 +38,7 @@ export '/screens/bookmark/views/retire_result.dart';
 export '/screens/lesson/finance_screen.dart';
 export '/screens/lesson/lesson_screen.dart';
 export '/screens/lesson/level_screen.dart';
+export '/screens/lesson/level_screen2.dart';
 export '/screens/lesson/quiz_screen.dart';
 
 
