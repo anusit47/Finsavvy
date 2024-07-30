@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:shop/models/retirement_result_arguments.dart';
+import 'package:shop/models/tax_result_arguments.dart';
 import 'package:intl/intl.dart';
 
-class RetirementResult extends StatelessWidget {
-  final RetirementResultArguments? arguments;
+class TaxResult extends StatelessWidget {
+  final TaxResultArguments? arguments;
 
-  const RetirementResult({super.key, required this.arguments});
+  const TaxResult({super.key, required this.arguments});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class RetirementResult extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ผลการคำนวณการเกษียณ'),
+        title: const Text('ผลการคำนวณภาษี'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -51,15 +51,15 @@ class RetirementResult extends StatelessWidget {
                   SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      'จำนวนเงินที่ต้องเตรียม\nสำหรับเกษียณ\n${numberFormat.format(args.totalRetirementFund)} บาท',
+                      'ภาษีที่ต้องเสีย\n${numberFormat.format(args.totalTax)} บาท',
                       style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 24,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
                   ),
                   Image.asset(
-                    'assets/images/all-finsavvy-image/money-bag 1.png', // Path to your image
+                    'assets/images/all-finsavvy-image/money-bag 1 (4).png', // Path to your image
                     width: 80, // Width of the image
                     height: 80, // Height of the image
                   ),
@@ -67,40 +67,36 @@ class RetirementResult extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16),
-            const Text(
-              'จำนวนเงินที่ต้องออมต่อเดือน',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 0, 0, 0)),
+            _buildDetailContainer(
+              color: Colors.blue.shade300,
+              text: 'รายได้รวม',
+              amount: numberFormat.format(args.totalIncome),
             ),
-            SizedBox(height: 8),
-            _buildRiskContainer(
+            SizedBox(height: 16),
+            _buildDetailContainer(
+              color: Colors.orange.shade300,
+              text: 'รวมค่าใช้จ่ายและค่าลดหย่อน',
+              amount: numberFormat.format(args.totalDeductions),
+            ),
+            SizedBox(height: 16),
+            _buildDetailContainer(
               color: Colors.green.shade300,
-              iconPath: 'assets/images/all-finsavvy-image/money-bag 1 (1).png',
-              text: 'ความเสี่ยงต่ำ 3.50%',
-              amount: numberFormat.format(args.lowRiskSavings),
-            ),
-            SizedBox(height: 16),
-            _buildRiskContainer(
-              color: Colors.yellow.shade700,
-              iconPath: 'assets/images/all-finsavvy-image/money-bag 1 (2).png',
-              text: 'ความเสี่ยงกลาง 5.50%',
-              amount: numberFormat.format(args.mediumRiskSavings),
-            ),
-            SizedBox(height: 16),
-            _buildRiskContainer(
-              color: Colors.red.shade400,
-              iconPath: 'assets/images/all-finsavvy-image/money-bag 1 (3).png',
-              text: 'ความเสี่ยงสูง 8.00%',
-              amount: numberFormat.format(args.highRiskSavings),
+              text: 'รายได้สุทธิ',
+              amount: numberFormat.format(args.netIncome),
             ),
             SizedBox(height: 16),
             const Center(
               child: Text(
-                'คำนวณด้วยอัตราเงินเฟ้อ 2.5% ตามค่าเฉลี่ยย้อนหลัง 10 ปี จากธนาคารแห่งประเทศไทย',
+                'คำนวณตามอัตราภาษีประเทศไทย',
                 style: TextStyle(
                     fontSize: 9, color: Color.fromARGB(255, 85, 85, 85)),
+              ),
+            ),
+            const Center(
+              child: Text(
+                'เครื่องมือนี้เป็นเพียงคำนวณภาษีเบื้องต้นเท่านั้นควรศึกษาการคำนวณภาษีอย่างละเอียด',
+                style: TextStyle(
+                    fontSize: 9, color: Color.fromARGB(255, 255, 0, 0)),
               ),
             ),
           ],
@@ -109,9 +105,8 @@ class RetirementResult extends StatelessWidget {
     );
   }
 
-  Widget _buildRiskContainer({
+  Widget _buildDetailContainer({
     required Color color,
-    required String iconPath,
     required String text,
     required String amount,
   }) {
@@ -134,19 +129,13 @@ class RetirementResult extends StatelessWidget {
                     color: Colors.white),
               ),
               Text(
-                '$amount บาทต่อเดือน',
+                '$amount บาท',
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
             ],
-          ),
-          Spacer(), // This will push the image to the right
-          Image.asset(
-            iconPath, // Path to your image
-            width: 80, // Width of the image
-            height: 80, // Height of the image
           ),
         ],
       ),

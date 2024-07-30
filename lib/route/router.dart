@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop/entry_point.dart';
 import 'package:shop/models/retirement_result_arguments.dart';
+import 'package:shop/models/tax_result_arguments.dart';
 
 import 'screen_export.dart';
 
@@ -337,6 +338,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => RetirementResult(arguments: args),
       );
+
+    case taxResult:
+      final args = settings.arguments as TaxResultArguments?;
+      return MaterialPageRoute(
+        builder: (context) => TaxResult(arguments: args),
+      );      
 
     default:
       return MaterialPageRoute(

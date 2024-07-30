@@ -29,6 +29,7 @@ export '/screens/user_info/views/user_info_screen.dart';
 
 export '/screens/bookmark/views/retirement_planner.dart';
 export '/screens/bookmark/views/tax_planner.dart';
+export '/screens/bookmark/views/tax_result.dart';
 export '/screens/bookmark/views/investment_planner.dart';
 export '/screens/bookmark/views/financial_health_checker.dart';
 export '/screens/bookmark/views/home_purchase_planner.dart';

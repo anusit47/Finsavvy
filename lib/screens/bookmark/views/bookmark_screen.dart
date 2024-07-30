@@ -61,7 +61,7 @@ class BookmarkScreen extends StatelessWidget {
                 Navigator.pushNamed(context, homePurchasePlanner);
               },
               child: Image.asset(
-                "assets/images/all-finsavvy-image/home_purchase_plan.png",
+                "assets/images/all-finsavvy-image/car.png",
               ),
             ),
           ],
