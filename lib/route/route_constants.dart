@@ -65,5 +65,6 @@ const String homePurchasePlanner = "home_purchase_planner";
 const String financialHealthChecker = "financial_health_checker";
 const String retirementResult = "retirement_result";
 const String taxResult = "tax_result";
+const String financeScreen = "finance_screen";
 
 

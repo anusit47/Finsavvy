@@ -345,6 +345,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => TaxResult(arguments: args),
       );      
 
+    case financeScreen:
+    return MaterialPageRoute(
+      builder: (context) => FinanceScreen(),
+    );
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine
