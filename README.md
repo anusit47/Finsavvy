@@ -1,4 +1,5 @@
 # Finsavvy - การเงินสำหรับทุกคน 💸
+## Download ได้ที่ไฟล์ Finsavvy.apk ด้านบน
 
 <p align="center">
   <img src="./readme image/FSV-C-Q-removebg.png" alt="Finsavvy Logo" style="width: 500px; height: auto;">
