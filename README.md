@@ -1,4 +1,4 @@
-# Finsavvy (Beta) - การเงินสำหรับทุกคน 💸
+# Finsavvy - การเงินสำหรับทุกคน 💸
 
 <p align="center">
   <img src="./readme image/FSV-C-Q-removebg.png" alt="Finsavvy Logo" style="width: 500px; height: auto;">
