@@ -70,5 +70,6 @@ const String lessonScreen = "lesson_screen";
 const String levelScreen = "level_screen";
 const String levelScreen2 = "level_screen2";
 const String quizScreen = "quiz_screen";
+const String entryPoint = "entry_point";
 
 

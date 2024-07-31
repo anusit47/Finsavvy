@@ -25,5 +25,6 @@ export '/screens/lesson/lesson_screen.dart';
 export '/screens/lesson/level_screen.dart';
 export '/screens/lesson/level_screen2.dart';
 export '/screens/lesson/quiz_screen.dart';
+export '/entry_point.dart';
 
 

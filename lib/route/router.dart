@@ -303,7 +303,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       builder: (context) => QuizScreen(),
     );
 
-
+    case entryPoint:
+    return MaterialPageRoute(
+      builder: (context) => EntryPoint(),
+    );
 
     default:
       return MaterialPageRoute(

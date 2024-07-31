@@ -58,7 +58,7 @@ class BookmarkScreen extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, homePurchasePlanner);
+                // Navigator.pushNamed(context, homePurchasePlanner);
               },
               child: Image.asset(
                 "assets/images/all-finsavvy-image/car.png",
